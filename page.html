@@ -1,0 +1,54 @@
+# pagesrepo
+<!DOCTYPE >
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script>
+	function revealMessage(){
+	document.getElementById("hiddenMessage").style.display='block';
+}
+function revealImage(){
+
+	document.getElementById("hiddenImage").style.display='block';
+}
+function closeImage(){
+	document.getElementById("hiddenMessage").style.display='none';
+	document.getElementById("hiddenImage").style.display='none'
+}
+function normalImg(){
+
+	document.getElementById("hiddenMessage").style.display='none';
+} </script>
+
+</head>
+
+
+<body>
+	<h1>Hello World</h1>
+	<h3>Blue</h3>
+	<div class="para">
+	<p> red</p>
+	</div>
+	<br>
+	<div id="italic">
+		<p>Italic TEXT</p>
+	</div>
+	<br>
+	<br>
+
+	<button class="btn btn-large btn-primary" onmouseover="revealMessage()" onmouseout="normalImg()" >SHOW MSG</button>
+	<p id="hiddenMessage" style="display:none">YOU are going to see Google Doodle</p>
+	
+
+
+	<button class="btn btn-info "onclick="revealImage()"> SHOW IMAGE</button>
+	<p id="hiddenImage" style="display:none"><img src="file:///C:/Users/MDShahrouq/Downloads/doodle.png" height="200" width="400"> </p>
+<br>
+<br>
+	<div id="closeImage"><button class="btn btn-danger" onclick="closeImage()">CLOSE</button></div>
+
+</body>
+
+</html>
